@@ -1,0 +1,18 @@
+body {
+  -webkit-user-select: none; /* для Chrome и Safari */
+  -moz-user-select: none; /* для Firefox */
+  -ms-user-select: none; /* для IE 10+ и Edge */
+  user-select: none;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
+  border: 1px solid black;
+
+}
