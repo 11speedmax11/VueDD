@@ -1,0 +1,92 @@
+@import '../Nav/style.scss'; 
+ 
+.card__head { 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  padding: 0px; 
+  gap: 16px; 
+  justify-content: space-between; 
+ 
+  min-width: 884px; 
+  width: 100%; 
+  height: 24px; 
+  margin-bottom: 18px; 
+} 
+ 
+.card__item { 
+  display: flex; 
+  border-bottom: 1px solid $border-color-active; 
+  margin-bottom: 10px; 
+} 
+ 
+.card__item:hover{ 
+  .card__menu{ 
+    display: block; 
+  } 
+} 
+ 
+.card__base{ 
+  width: 100%; 
+} 
+ 
+.card__img { 
+  border-radius: 50%; 
+  margin: 0 16px; 
+} 
+ 
+.card__name { 
+  margin: 0 16px; 
+} 
+ 
+.card__list { 
+  list-style: none; 
+  padding: 0; 
+  margin: 20px; 
+} 
+ 
+ 
+.card__content { 
+  margin: 0; 
+  margin-left: 16px; 
+  color: $font-color-disabled; 
+} 
+ 
+.card__body { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 8px; 
+} 
+ 
+.card__number { 
+  margin-right: 16px; 
+  color: $font-color-primary; 
+} 
+ 
+.card__state { 
+  margin: 0 16px; 
+  padding: 0px 8px; 
+ 
+  background: $background-color-bronze; 
+  border-radius: 4px; 
+  color: $font-color-secondary; 
+} 
+ 
+.card__creat { 
+  margin: 0; 
+  color: $font-color-disabled; 
+} 
+ 
+.card__chang { 
+  margin: 0 16px; 
+  color: $font-color-disabled; 
+} 
+ 
+.card__ico{ 
+  margin-right: 16px; 
+  margin-top: 10px; 
+} 
+ 
+.card__menu{ 
+  display: none; 
+}
