@@ -1,7 +1,20 @@
 import '@/scss/index.scss';
-import { createNavigation } from './helpers';
-import { createPlug } from './helpers';
-import { createTask } from './helpers';
+
+import {
+    ctreateMain,
+    createNavigation,
+    createPlug,
+    createTask,
+    createProject,
+} from './helpers';
+
+import {installEvent} from './events';
+
+import '@/js/register.js';
+
 createNavigation();
+ctreateMain();
 createPlug();
 createTask();
+createProject();
+installEvent();

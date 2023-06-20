@@ -2,7 +2,6 @@ import './style.scss';
 const create = document.createElement.bind(document)
 
 export const createEmptyListBlock = (text, buttonText) => {
-    const emptyListBlock = document.createElement('main');
   
     const emptySection = document.createElement('section');
     emptySection.classList.add('empty-list');
@@ -17,9 +16,8 @@ export const createEmptyListBlock = (text, buttonText) => {
   
     emptySection.appendChild(emptyText);
     emptySection.appendChild(addButton);
-  
-    emptyListBlock.appendChild(emptySection);
-  
-    return emptyListBlock;
+
+    return emptySection;
+
   }
 

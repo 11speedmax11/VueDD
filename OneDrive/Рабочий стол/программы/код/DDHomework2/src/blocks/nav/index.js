@@ -1,5 +1,7 @@
 import './style.scss';
+import '@/js/register.js';
 import avatar from '@/assets/images/profilPicture.png'
+
 const create = document.createElement.bind(document)
 
 export const createNavigationBlock = (projects, tasks, users, avatarSrc) => {
@@ -12,6 +14,7 @@ export const createNavigationBlock = (projects, tasks, users, avatarSrc) => {
 
   const projectsItem = document.createElement('li');
   projectsItem.classList.add('navigation__item');
+  projectsItem.classList.add('active');
   projectsItem.textContent = projects;
 
   const tasksItem = document.createElement('li');
@@ -34,22 +37,40 @@ export const createNavigationBlock = (projects, tasks, users, avatarSrc) => {
   avatarImg.setAttribute('src', avatar);
   avatarImg.setAttribute('alt', 'Аватар исполнителя');
 
-  // const headerIco = document.createElement('div');
-  // headerIco.classList.add('header__ico');
-
-  const headerIco = document.createElement('svg');
-  headerIco.classList.add('header__ico');
-  const useElement = document.createElement('use');
-  // useElement.setAttributeNS('href', "../src/assets/icon/Vector.svg#name");
-  headerIco.appendChild(useElement);
-  //return svgElement;
-
-
+  const dropdownMenu = document.createElement('div');
+  const profile = document.createElement('div');
+  const profileText = document.createElement('p');
+  const exit = document.createElement('div');
+  const exitText = document.createElement('p');
+  
+  profileText.textContent = 'Профиль';
+  exitText.textContent = 'Выход';
+  
+  dropdownMenu.classList.add('header__dropdownMenu');
+  profile.classList.add('header__profile');
+  exit.classList.add('header__exit');
+  
+  profile.appendChild(profileText);
+  exit.appendChild(exitText);
+  dropdownMenu.appendChild(profile);
+  dropdownMenu.appendChild(exit);
+  
+  headerButton.appendChild(dropdownMenu);
   headerButton.appendChild(avatarImg);
-  headerButton.appendChild(headerIco);
+
+  const myDiv = document.createElement('div');
+  myDiv.classList.add('header__icon');
+  const mySvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  mySvg.classList.add('header__svg');
+  const useElement = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+  useElement.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#vector');
+  mySvg.appendChild(useElement);
+  myDiv.appendChild(mySvg);
+  headerButton.appendChild(myDiv);
+
 
   header.appendChild(navigation);
-  header.appendChild(headerButton);
+  header.appendChild(headerButton); 
 
   return header;
 
