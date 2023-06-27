@@ -1,0 +1,74 @@
+@import "@/scssVars.scss";
+
+.profile {
+  display: flex;
+  margin: 24px;
+}
+
+.profile__image {
+  padding: 0px 24px 0px 0px;
+
+}
+
+.profile__img {
+  width: 300px;
+  height: 300px;
+  padding: 12px 10px;
+}
+
+.profile__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px
+}
+
+.profile__title {
+  display: flex;
+  align-items: center;
+}
+
+.profile__name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile__status {
+  height: 19px;
+  padding: 0px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: $background-color-primary;
+  color: $font-color-secondary;
+  margin-left: 16px;
+
+}
+
+.profile__myself {
+  margin-bottom: 8px;
+  color: $font-color-disabled;
+}
+
+.card__svg {
+  height: 24px;
+  width: 24px;
+}
+
+.card__icon {
+  width: 42px;
+  height: 42px;
+  background: $background-color-secondary;
+  border: 1px solid $border-color-rgba;
+  border-radius: 4px;
+}
+
+.card__icon:hover {
+  background: $background-color-secondary-hover;
+  border: 1px solid $border-color-rgba-hover;
+}
+
+.card__icon:active {
+  background: $background-color-primary-disabled;
+  border: 1px solid $border-color-active;
+}
