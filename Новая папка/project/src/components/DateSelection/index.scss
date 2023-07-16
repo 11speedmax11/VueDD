@@ -1,0 +1,47 @@
+@import "@/scssVars.scss";
+
+.date {
+  position: relative;
+
+
+  &__wrapper {
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid $border-color-rgba;
+    justify-content: space-between;
+    padding: 10px 8px 10px 12px;
+    height: 22px;
+  }
+
+  &__picture {
+    color: $font-color-disabled;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__value {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__value.placeholder {
+    color: $font-color-disabled;
+  }
+
+  &__wrapper:hover {
+    border: 1px solid $border-color-rgba-hover;
+  }
+
+  &__wrapper:active,
+  &__wrapper.active {
+    border: 1px solid $border-color-active;
+  }
+
+  &__selection {
+    position: absolute;
+    top: 46px;
+    left: 0;
+  }
+}

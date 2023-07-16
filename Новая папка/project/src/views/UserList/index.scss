@@ -1,0 +1,52 @@
+@import "@/scssVars.scss";
+
+.user-list {
+  padding: 24px;
+
+  &__search {
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    gap: 24px;
+
+    .button {
+      padding: 9px;
+    }
+
+    .input-custom {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    height: 60px;
+    border-bottom: 1px solid $border-color-active;
+    display: flex;
+    padding: 9px 16px 9px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__item:hover &__menu {
+    display: block;
+  }
+
+
+  &__search .isTurn svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  &__plug{
+    height: calc(100vh - 216px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $border-color-rgba;
+    border-radius: 4px;
+    margin-top: 24px;
+  }
+}

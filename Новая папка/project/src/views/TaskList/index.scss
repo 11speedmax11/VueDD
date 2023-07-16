@@ -1,0 +1,36 @@
+@import "@/scssVars.scss";
+
+.task__search {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  height: 42px;
+  gap: 24px;
+
+  .input-custom {
+    width: 100%;
+  }
+
+  .button {
+    padding: 9px;
+  }
+
+  .task__select .options {
+    width: 193px;
+  }
+
+}
+
+.task__plug {
+  height: calc(100vh - 216px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $border-color-rgba;
+  border-radius: 4px;
+  margin: 0 24px 24px;
+}
+
+.empty-list {
+  height: calc(100vh - 148px);
+}

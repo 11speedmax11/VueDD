@@ -1,0 +1,123 @@
+@import "@/scssVars.scss";
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+
+  li {
+    height: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  svg {
+    color: $font-color-disabled;
+  }
+
+  ul {
+    overflow-y: auto;
+    height: 300px;
+    display: block;
+    z-index: 3;
+  }
+}
+
+
+
+.custom-select.active .selected-option {
+  border: 1px solid $border-color-active;
+  z-index: 2;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 19px;
+  width: 100%;
+  cursor: pointer;
+  background-color: $background-color-secondary;
+  padding: 10px 8px 10px 12px;
+  border: 1px solid $border-color-rgba;
+  border-radius: 4px;
+
+  .custom-select__svg {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: $background-color-secondary;
+  padding: 8px 0;
+  margin-top: 2px;
+  margin-bottom: 0;
+  display: none;
+  box-shadow: 0px 0px 4px 0px $border-shadow-color-rgba;
+
+  li {
+    padding: 8px 16px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+
+    &:hover {
+      background-color: $background-color-secondary-hover;
+    }
+
+    &:first-child {
+      margin-top: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
+  }
+
+
+}
+
+
+
+
+.search {
+  background-color: $background-color-primary-disabled;
+  height: 42px;
+
+  .selected-option {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 171px;
+  }
+
+  .button--secondary {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+
+  .button {
+    padding: 9px;
+    height: 24px;
+  }
+}
+
+.filter__selection .search svg {
+  color: $background-color-primary;
+}
+
+.selected-text.placeholder {
+  color: $font-color-disabled;
+}

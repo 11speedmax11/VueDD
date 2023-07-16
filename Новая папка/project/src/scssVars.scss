@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("@/assets/fonts/OpenSans-Italic-VariableFont_wdth.ttf") format("ttf"),
+    url("@/assets/fonts/OpenSans-VariableFont_wdth.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+$font-family-primary: "Open Sans", sans-serif;
+
+$background-color-primary: #1F75CB;
+$background-color-primary-hover: #1068BF;
+$background-color-primary-active: #0B5CAD;
+$background-color-primary-disabled: #DCDCDE;
+$background-color-secondary: #FFFFFF;
+$background-color-secondary-hover: #ECECEF;
+$background-color-bronze: #9E6955;
+
+$font-color-primary: #1C1C1C;
+$font-color-secondary: #FFFFFF;
+$font-color-disabled: #8E8E8E;
+$font-color-delete: #EE4222;
+
+$border-color-active: #1C1C1C;
+$border-color-default: #FFFFFF;
+$border-color-rgba-hover: rgba(18, 19, 22, 0.5);
+$border-color-rgba: rgba(0, 0, 0, 0.15);
+
+$border-shadow-color-rgba: rgba(0, 0, 0, 0.25);
+
+body {
+  margin: 0;
+  font-family: $font-family-primary;
+}
+
+.main {
+  min-width: 1024px;
+  min-height: calc(100vh - 100px);
+}

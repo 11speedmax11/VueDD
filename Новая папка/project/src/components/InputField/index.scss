@@ -1,0 +1,32 @@
+@import "@/scssVars.scss";
+
+input {
+  margin: 0;
+  border: 0;
+  outline: none;
+  flex: 1;
+}
+
+.input-custom {
+  padding: 10px 12px;
+  border: 1px solid $border-color-rgba;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 8px;
+  }
+
+  .svgClear {
+    color: $border-color-rgba;
+  }
+
+  .svgSearch {
+    color: $font-color-disabled;
+  }
+}
+
+.isSearch {
+  padding: 10px 8px 10px 12px;
+}

@@ -1,0 +1,140 @@
+@import "@/scssVars.scss";
+
+.main {
+  .task-card {
+    padding: 24px;
+    height: calc(100vh - 148px);
+
+    &__back {
+      margin-bottom: 24px;
+
+      .button {
+        display: flex;
+        height: 42px;
+        align-items: center;
+        padding-left: 8px;
+
+        .SvgStart {
+          padding-top: 8px;
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    &__body {
+      border: 1px solid $border-color-rgba;
+      display: flex;
+    }
+
+    .custom-select{
+      width: 100%;
+    }
+
+    .project {
+      height: 42px;
+      display: flex;
+      justify-content: space-between;
+
+      &__information {
+        display: flex;
+      }
+
+      &__code {
+        margin-left: 16px;
+      }
+
+      &__menu {
+        .project__icon {
+          height: 42px;
+          width: 42px;
+          padding: 0;
+        }
+
+        .project__delete {
+          color: $font-color-delete;
+        }
+      }
+    }
+
+    &__name {
+      margin: 16px 0;
+    }
+
+    &__information {
+      display: flex;
+    }
+
+    &__current-status {
+      display: flex;
+      align-items: center;
+    }
+    &__create-date {
+      margin: 0 8px;
+      display: flex;
+      align-items: center;
+    }
+    &__current-status .card__status {
+      margin: 0;
+    }
+
+    &__header {
+      padding: 24px;
+      border-bottom: 1px solid $border-color-rgba;
+    }
+
+    &__aside {
+      padding: 24px;
+      width: 252px;
+      border-left: 1px solid $border-color-rgba;
+    }
+
+    &__main {
+      width: calc(100% - 300px);
+    }
+
+    &__description {
+      padding: 24px;
+
+      &__text {
+        margin-bottom: 16px;
+      }
+
+      &__author {
+        padding: 8px 16px;
+      }
+    }
+
+    &__activity {
+      padding: 0;
+      padding-top: 8px;
+
+      &__body {
+        display: flex;
+        align-items: center;
+      }
+
+      &__comment {
+        padding: 10px;
+        border: 1px solid $font-color-disabled;
+        border-radius: 4px;
+      }
+
+      &__title {
+        align-items: center;
+        display: flex;
+      }
+    }
+
+    &__time-input {
+      display: flex;
+
+      .button,
+      .header__icon {
+        padding: 0;
+        color: $font-color-secondary;
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "@/scssVars.scss";
+
+.comment-field {
+  display: flex;
+  padding: 16px 16px 8px 0;
+  align-items: end;
+
+
+  &__text{
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border: 1px solid $border-color-rgba;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .button {
+    margin-left: 40px;
+    height: 42px;
+    width: 42px;
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,19 @@
+@import "@/scssVars.scss";
+
+.custom-file-upload {
+  border: 2px dashed $border-color-rgba;
+  padding: 20px;
+
+
+  &__drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__text {
+    display: grid;
+    text-align: center;
+  }
+}

@@ -1,0 +1,80 @@
+@import "@/scssVars.scss";
+
+.authorization {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background-color-secondary-hover;
+  &__erorre {
+    color: $font-color-delete;
+    &-field .input-custom {
+      border: 1px solid $font-color-delete;
+      & input {
+        color: $font-color-delete;
+      }
+    }
+  }
+  &__wrapper {
+    border-radius: 4px;
+    background: $background-color-secondary;
+    box-shadow: 0px 4px 4px 0px $border-shadow-color-rgba;
+    display: flex;
+    width: 300px;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  &__header {
+    display: flex;
+    height: 32px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  &__header p {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__input {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-bottom: 1px solid $border-color-rgba;
+    border-top: 1px solid $border-color-rgba;
+  }
+  
+  &__input span {
+    margin-left: 4px;
+    color: $font-color-delete;
+  }
+  
+  &__input p {
+    color: $font-color-disabled;
+  }
+  
+  &__entry {
+    display: flex;
+    padding: 24px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: stretch;
+  }
+  
+  &__login,
+  &__password {
+    width: 100%;
+  }
+}
+

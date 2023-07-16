@@ -1,0 +1,38 @@
+@import "@/scssVars.scss";
+
+.modal{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $border-shadow-color-rgba;
+  z-index: 90;
+  justify-content: center;
+  align-items: center;
+
+  &__body{
+ 
+    background-color: $background-color-secondary;
+    width: 640px;
+  }
+  &__title{
+    padding: 16px;
+    font-size: 24px;
+    border-bottom: 1px solid $border-color-rgba;
+  }
+}
+
+.create-project-modal{
+  &__wrapper{
+    padding: 16px;
+    border-bottom: 1px solid $border-color-rgba;
+  }
+  &__footer{
+    padding: 16px;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+  }
+}

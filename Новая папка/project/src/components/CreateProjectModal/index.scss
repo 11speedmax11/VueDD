@@ -1,0 +1,13 @@
+@import "@/scssVars.scss";
+
+.create-project-modal{
+  &__star {
+    color: $font-color-delete;
+  }
+  
+  &__erorre-field {
+    .input-custom {
+      border: 1px solid $font-color-delete;
+    }
+  }
+}

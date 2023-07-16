@@ -1,0 +1,76 @@
+@import "@/scssVars.scss";
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 24px;
+  min-width: 976px;
+  height: 52px;
+  background: $background-color-primary;
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__ico {
+    background-position: center;
+    width: 13px;
+    height: 8px;
+    transition: background-color 2s ease;
+  }
+
+  &__svg {
+    width: 13px;
+    height: 8px;
+  }
+
+  &__button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 42px;
+    width: 88px;
+    padding: 12px 16px;
+    gap: 8px;
+    color: $font-color-secondary;
+    background: $background-color-primary;
+    justify-content: space-between;
+    border: 1px solid $background-color-primary;
+    transition: border 0.5s ease, background-color 0.5s ease;
+  }
+
+  &__button:hover {
+    border: 1px solid $border-color-default;
+    background: $background-color-primary;
+    color: $font-color-secondary;
+  }
+
+
+  &__button:active {
+    background: $background-color-secondary;
+    border: 1px solid $border-color-default;
+    color: $font-color-disabled;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+svg {
+  transition: transform 0.3s ease;
+}
+
+.dropdown.activeMenu .header__button svg {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}

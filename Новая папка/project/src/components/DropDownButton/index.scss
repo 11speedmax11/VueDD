@@ -1,0 +1,36 @@
+@import "@/scssVars.scss";
+
+.dropdown {
+  position: relative;
+
+  &__menu {
+    z-index: 2;
+    display: flex;
+    background-color: $background-color-secondary;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 4px $border-shadow-color-rgba;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    height: 35px
+  }
+
+
+}
+
+.drop-down-menu__buttons {
+  margin: 8px 0;
+}
+
+.dropdown.active .header__button,
+.dropdown.activeMenu .header__button {
+  background: $border-color-default;
+  border: 1px solid $border-color-default;
+  color: $font-color-disabled;
+}

@@ -1,0 +1,75 @@
+@import "@/scssVars.scss";
+
+.profile {
+  display: flex;
+  padding: 24px;
+
+  &__image {
+    padding: 0 24px 0 0;
+  }
+
+  &__img {
+    width: 300px;
+    height: 300px;
+    padding: 12px 10px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    &__name {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  &__status {
+    height: 19px;
+    padding: 0 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: $background-color-primary;
+    color: $font-color-secondary;
+    margin-left: 16px;
+  }
+
+  &__myself {
+    margin-bottom: 8px;
+    color: $font-color-disabled;
+  }
+
+  &__body {
+    width: 100%;
+  }
+}
+
+.card {
+  &__svg {
+    height: 24px;
+    width: 24px;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+  }
+}
+
+.header {
+  &__icon {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
